@@ -1,7 +1,9 @@
 # Tweeting-in-Swift
 Tweet-sized bits of Swift code that perform useful functions
 
-    let array: [Double] = [1,2,4,5,6,6,7,24,24,24,62,624]
+```swift
+let array: [Double] = [1,2,4,5,6,6,7,24,24,24,62,624]
+```
 
 Arithmetic Mean of Array
 -------------------------------------
