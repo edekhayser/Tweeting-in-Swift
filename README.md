@@ -6,13 +6,16 @@ Tweet-sized bits of Swift code that perform useful functions
 Arithmetic Mean of Array
 -------------------------------------
 
-    let average = array.reduce(0.0, combine: +) / Double(countElements(array))
-    println(average)      //"65.75"
+```swift
+let average = array.reduce(0.0, combine: +) / Double(countElements(array))
+println(average)      //"65.75"
+```
 
 Median of Array
 -------------------------
-    
-    //Precondition: array is sorted
-    let len = countElements(array)
-    let median = len % 2 == 0 ? (array[len/2] + array[len/2+1]) / 2 : array[len / 2]
-    println(median)       //"15.5"
+```swift    
+//Precondition: array is sorted
+let len = countElements(array)
+let median = len % 2 == 0 ? (array[len/2] + array[len/2+1]) / 2 : array[len / 2]
+println(median)       //"15.5"
+```
