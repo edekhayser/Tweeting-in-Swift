@@ -49,3 +49,16 @@ func med(var a:[Double])->Double{
 	return l%2==0 ?(a[l/2]+a[l/2+1])/2:a[l/2]
 }   //14.0
 ```
+
+Standard Deviation (Population)
+-------------------------
+```swift    
+//**
+Standard Deviation (Population)
+:param: a The array that the population standard deviation will be found for.
+:returns: The population standard deviation of the input array.
+*/
+func σ(a:[Double])->Double{
+	return pow(aMean(a.map{pow(($0-aMean(a)),2)}),0.5)
+}   //406.614260724822
+```
