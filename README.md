@@ -13,11 +13,8 @@ Arithmetic Mean of Array
 ```swift
 /**
 Arithmetic Mean
-
 :param: a The array that the arithmetic mean will be found for.
-
 :returns: The arithmetic mean of the input array.
-
 */
 func aMean(a:[Double])->Double{
 	return a.reduce(0.0, combine: +) / Double(countElements(a))
@@ -30,11 +27,8 @@ Geometric Mean of Array
 ```swift
 /**
 Geometric Mean
-
 :param: a The array that the geometic mean will be found for.
-
 :returns: The geometric mean of the input array.
-
 */
 func gMean(a:[Double])->Double{
 	return pow(a.reduce(1.0, combine: *), 1.0 / Double(countElements(a)))
@@ -46,11 +40,8 @@ Median of Array
 ```swift    
 /**
 Median
-
 :param: a The array that the median will be found for.
-
 :returns: The median of the input array.
-
 */
 func med(var a:[Double])->Double{
 	a.sort(<)
