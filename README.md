@@ -63,3 +63,17 @@ func σ(a:[Double])->Double{
 	return pow(aMean(a.map{pow(($0-aMean(a)),2)}),0.5)
 }   //406.614260724822
 ```
+
+Standard Deviation (Sample)
+-------------------------
+```swift  
+/**
+Standard Deviation (Sample)
+:param: a The array that the sample standard deviation will be found for.
+:returns: The sample standard deviation of the input array.
+*/
+func s(a:[Double])->Double{
+	let b = a.map{pow(($0-aMean(a)),2)}
+	return pow(b.reduce(0.0,combine:+)/Double(countElements(b)-1),0.5)
+}
+```
