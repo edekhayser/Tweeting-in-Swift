@@ -2,22 +2,59 @@
 Tweet-sized bits of Swift code that perform useful functions
 
 ```swift
-let array: [Double] = [1,2,4,5,6,6,7,24,24,24,62,624]
+import Foundation
+
+let array: [Double] = [5,1,7,21,62,77,1431,6,3,3]
 ```
 
 Arithmetic Mean of Array
--------------------------------------
+------------------------
 
 ```swift
-let average = array.reduce(0.0, combine: +) / Double(countElements(array))
-println(average)      //"65.75"
+/**
+Arithmetic Mean
+
+:param: a The array that the arithmetic mean will be found for.
+
+:returns: The arithmetic mean of the input array.
+
+*/
+func aMean(a:[Double])->Double{
+	return a.reduce(0.0, combine: +) / Double(countElements(a))
+}   //161.6
+```
+
+Geometric Mean of Array
+-----------------------
+
+```swift
+/**
+Geometric Mean
+
+:param: a The array that the geometic mean will be found for.
+
+:returns: The geometric mean of the input array.
+
+*/
+func gMean(a:[Double])->Double{
+	return pow(a.reduce(1.0, combine: *), 1.0 / Double(countElements(a)))
+}   //13.9097817160872
 ```
 
 Median of Array
 -------------------------
 ```swift    
-//Precondition: array is sorted
-let len = countElements(array)
-let median = len % 2 == 0 ? (array[len/2] + array[len/2+1]) / 2 : array[len / 2]
-println(median)       //"15.5"
+/**
+Median
+
+:param: a The array that the median will be found for.
+
+:returns: The median of the input array.
+
+*/
+func med(var a:[Double])->Double{
+	a.sort(<)
+	let len = countElements(a)
+	return len % 2 == 0 ? (a[len/2] + a[len/2+1]) / 2 : a[len / 2]
+}   //14.0
 ```
