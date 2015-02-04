@@ -75,5 +75,5 @@ Standard Deviation (Sample)
 func s(a:[Double])->Double{
 	let b = a.map{pow(($0-aMean(a)),2)}
 	return pow(b.reduce(0.0,combine:+)/Double(countElements(b)-1),0.5)
-}
-```
+}   //426.460634440358
+```	
