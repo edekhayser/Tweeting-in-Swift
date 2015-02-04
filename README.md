@@ -54,7 +54,7 @@ func med(var a:[Double])->Double{
 Standard Deviation (Population)
 -------------------------
 ```swift    
-//**
+/**
 Standard Deviation (Population)
 :param: a The array that the population standard deviation will be found for.
 :returns: The population standard deviation of the input array.
