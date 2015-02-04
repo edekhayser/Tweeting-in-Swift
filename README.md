@@ -17,7 +17,7 @@ Arithmetic Mean
 :returns: The arithmetic mean of the input array.
 */
 func aMean(a:[Double])->Double{
-	return a.reduce(0.0, combine: +) / Double(countElements(a))
+	return a.reduce(0.0,combine:+)/Double(countElements(a))
 }   //161.6
 ```
 
@@ -31,7 +31,7 @@ Geometric Mean
 :returns: The geometric mean of the input array.
 */
 func gMean(a:[Double])->Double{
-	return pow(a.reduce(1.0, combine: *), 1.0 / Double(countElements(a)))
+	return pow(a.reduce(1.0,combine:*),1.0/Double(countElements(a)))
 }   //13.9097817160872
 ```
 
@@ -45,7 +45,7 @@ Median
 */
 func med(var a:[Double])->Double{
 	a.sort(<)
-	let len = countElements(a)
-	return len % 2 == 0 ? (a[len/2] + a[len/2+1]) / 2 : a[len / 2]
+	let l = countElements(a)
+	return l%2==0 ?(a[l/2]+a[l/2+1])/2:a[l/2]
 }   //14.0
 ```
