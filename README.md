@@ -1,6 +1,5 @@
 # Tweeting-in-Swift
 Tweet-sized bits of Swift code that perform useful functions.
-Aggregated from Twitter account @ERDekhayser
 
 ```swift
 import Foundation
@@ -14,6 +13,7 @@ Arithmetic Mean of Array
 ```swift
 /**
 Arithmetic Mean
+
 :param: a The array that the arithmetic mean will be found for.
 :returns: The arithmetic mean of the input array.
 */
@@ -28,6 +28,7 @@ Geometric Mean of Array
 ```swift
 /**
 Geometric Mean
+
 :param: a The array that the geometic mean will be found for.
 :returns: The geometric mean of the input array.
 */
@@ -41,6 +42,7 @@ Median of Array
 ```swift    
 /**
 Median
+
 :param: a The array that the median will be found for.
 :returns: The median of the input array.
 */
@@ -56,6 +58,7 @@ Standard Deviation (Population)
 ```swift    
 /**
 Standard Deviation (Population)
+
 :param: a The array that the population standard deviation will be found for.
 :returns: The population standard deviation of the input array.
 */
@@ -69,6 +72,7 @@ Standard Deviation (Sample)
 ```swift  
 /**
 Standard Deviation (Sample)
+
 :param: a The array that the sample standard deviation will be found for.
 :returns: The sample standard deviation of the input array.
 */
